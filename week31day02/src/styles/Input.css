@@ -1,0 +1,10 @@
+input {
+  width: 100px;
+  -webkit-transition: width 0.35s ease-in-out;
+  transition: width 0.35s ease-in-out;
+  color: black;
+}
+input:focus {
+  width: 250px;
+  background-color: rgb(5, 253, 241);
+}
