@@ -1,13 +1,32 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
+import SeasonDisplay from "./SeasonDisplay";
 
 class App extends Component {
-  render() {
+  // constructor(props) { // the old way of doing state setting
+  //   super(props);
+
+  //   this.state = { lat: null, errorMessage: "" };
+  // }
+  state = { lat: null, errorMessage: "" }; //the new way of state setting
+  componentDidMount() {
     window.navigator.geolocation.getCurrentPosition(
-      (position) => console.log(position),
-      (err) => console.log(err)
+      (position) => this.setState({ lat: position.coords.latitude }),
+      (err) => this.setState({ errorMessage: err.message })
     );
-    return <div>Latitude: </div>;
+  }
+  render() {
+    if (this.state.errorMessage && !this.state.lat) {
+      return <div>Error:{this.state.errorMessage}</div>;
+    }
+    if (!this.state.errorMessage && this.state.lat) {
+      return <SeasonDisplay lat={this.state.lat} />;
+    }
+    return (
+      <div>
+        <i className="spinner loading icon"></i>
+      </div>
+    );
   }
 }
 
