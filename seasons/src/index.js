@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
 import SeasonDisplay from "./SeasonDisplay";
+import Loader from "./Loader";
+import ErrorMessage from "./Error";
 
 class App extends Component {
   // constructor(props) { // the old way of doing state setting
@@ -15,18 +17,18 @@ class App extends Component {
       (err) => this.setState({ errorMessage: err.message })
     );
   }
-  render() {
+
+  renderContentHelper() {
     if (this.state.errorMessage && !this.state.lat) {
-      return <div>Error:{this.state.errorMessage}</div>;
+      return <ErrorMessage message={this.state.errorMessage} />;
     }
     if (!this.state.errorMessage && this.state.lat) {
       return <SeasonDisplay lat={this.state.lat} />;
     }
-    return (
-      <div>
-        <i className="spinner loading icon"></i>
-      </div>
-    );
+    return <Loader message="Accessing your location" />;
+  }
+  render() {
+    return <div className="contentBody">{this.renderContentHelper()}</div>;
   }
 }
 
