@@ -1,21 +1,20 @@
 import React, { Component } from "react";
 
 class SearchBar extends Component {
-  state = { term: "" };
-  // onInputChange(e) {
-  //   console.log(e.target.value);
-  // }
+  state = { term: "", isClicked: true };
 
   onFormSubmit = (e) => {
     e.preventDefault();
+    let isClicked = this.state.isClicked;
+    // console.log(isClicked);
     //in a class component we have to write this.props to pass a prop where as in a fucntional
     //component we just use the term prpos.
-    this.props.onSearchSubmit(this.state.term);
+    this.props.onSearchSubmit(this.state.term, isClicked);
   };
 
   render() {
     return (
-      <div className="ui segment">
+      <div className="ui segment" style={{ backgroundColor: "transparent" }}>
         <form onSubmit={this.onFormSubmit} className="ui form">
           <div className="field" style={{ display: "flex" }}>
             <input
