@@ -1,0 +1,51 @@
+.Menu {
+  /* overflow: hidden; */
+  background-color: transparent;
+  display: flex;
+}
+.SearchBar {
+  position: absolute;
+  right: 4em;
+}
+.Menu a {
+  float: left;
+  color: whitesmoke;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.Menu a:hover {
+  background-color: rgba(141, 137, 137, 0.377);
+  color: whitesmoke;
+  font-size: large;
+  font-weight: bold;
+}
+/*@media only screen and (max-width: 600px) {
+  .Menu {
+    overflow: hidden; 
+    background-color: transparent;
+    display: flex;
+    flex-direction: column; 
+  }
+  .SearchBar {
+    position: absolute;
+    top: 4em;
+  }
+  .Menu a {
+    float: left;
+    color: whitesmoke;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+  .Menu a:hover {
+    background-color: rgba(141, 137, 137, 0.377);
+    color: whitesmoke;
+    font-size: large;
+    font-weight: bold;
+  }
+}*/
