@@ -9,7 +9,7 @@
 }
 .Menu a {
   float: left;
-  color: whitesmoke;
+  color: black;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -18,7 +18,7 @@
 
 .Menu a:hover {
   background-color: rgba(141, 137, 137, 0.377);
-  color: whitesmoke;
+  color: red;
   font-size: large;
   font-weight: bold;
 }

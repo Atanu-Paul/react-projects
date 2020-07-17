@@ -28,7 +28,7 @@ class SearchBar extends Component {
             />
             &nbsp;&nbsp;&nbsp;
             <button
-              className="ui labeled icon button"
+              className="ui labeled icon button button-style"
               onSubmit={this.onFormSubmmit}
             >
               <i className="searchengin icon" style={{ fontSize: "20px" }}></i>

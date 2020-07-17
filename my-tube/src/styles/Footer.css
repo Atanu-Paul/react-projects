@@ -4,6 +4,7 @@
   bottom: 0;
   width: 100%;
   background-color: transparent;
-  color: whitesmoke;
+  color: black;
   text-align: center;
+  z-index: -1;
 }
