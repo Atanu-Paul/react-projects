@@ -1,8 +1,8 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-# A react app to fetch data from the YouTube api and render videos on screen after search.
+# A react and redux app to show how react and redux works together.
 
-## So far only the search feature. Still a work in progress. Features to add Google Oauth Login and Logout, trending videos page, pageination,and a lot of extensive desgin.
+## A very basic app.
 
 ## Available Scripts
 
