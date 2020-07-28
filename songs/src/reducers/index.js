@@ -27,6 +27,40 @@ const songsReducers = () => {
       duration: "5:00",
       artist: "Imagine Dragons",
     },
+    {
+      id: 5,
+      title: "Shop Around",
+      duration: "6:00",
+      artist: "Smokey Robinson and the Miracles",
+    },
+    {
+      id: 6,
+      title: "Miss You",
+      duration: "7:00",
+      artist: "The Rolling Stones",
+    },
+    {
+      id: 7,
+      title: "Brown Sugar",
+      duration: "8:00",
+      artist: "The Rolling Stones",
+    },
+    {
+      id: 8,
+      title: "Ignition (Remix)",
+      duration: "9:00",
+    },
+    {
+      id: 9,
+      title: "Time to Pretend",
+      duration: "10:00",
+    },
+    {
+      id: 10,
+      title: "I Will Survive",
+      duration: "15:00",
+      artist: "Gloria Gaynor",
+    },
   ];
 };
 
