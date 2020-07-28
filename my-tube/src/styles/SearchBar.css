@@ -1,0 +1,27 @@
+.search-bar {
+  width: 50em;
+  align-content: center;
+  left: 14em;
+}
+
+@media only screen and (max-width: 1024px) {
+  .search-bar {
+    width: 50em;
+    align-content: center;
+    left: 8em;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .search-bar {
+    width: 40em;
+    align-content: center;
+    left: 6em;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .search-bar {
+    width: 25em;
+    align-content: center;
+    left: -1em;
+  }
+}

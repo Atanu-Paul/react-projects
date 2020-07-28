@@ -1,6 +1,8 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-# A react app just to demo the type of compoents in react like what is a class  component and what is a function component.
+# A react app just to demo how to fetch data from an external api and render them on screen with react.
+
+## we use the unsplash api here for this project. This one has only the search feature.
 
 ## Available Scripts
 

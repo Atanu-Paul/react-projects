@@ -1,6 +1,8 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-# A react app just to demo the type of compoents in react like what is a class  component and what is a function component.
+# A react and redux app to show how react and redux works together.
+
+## A very basic app.
 
 ## Available Scripts
 
