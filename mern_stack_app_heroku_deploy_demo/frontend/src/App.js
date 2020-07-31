@@ -3,12 +3,12 @@ import axios from "axios";
 // import List from "./components/List";
 
 class App extends Component {
-  state = { users: [], isClicked: false };
+  state = { users: [] };
 
   onHandleClick = async () => {
-    const res = await axios.get("http://localhost:5000/api/users");
-    console.log(res.data);
-    this.setState({ users: res.data, isClicked: true });
+    const res = await axios.get("http://localhost:8080/");
+    console.log(res);
+    this.setState({ users: res.data });
   };
   //_id,address email first_name gender last_name
   renderList = () => {
@@ -21,7 +21,7 @@ class App extends Component {
         "Name:",
         userList.first_name,
         userList.last_name,
-        'Gender:',
+        "Gender:",
         userList.gender
       )
     );
